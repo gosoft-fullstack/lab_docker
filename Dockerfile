@@ -1,5 +1,3 @@
-FROM node:14
-WORKDIR /app
+FROM bash
 COPY . .
-RUN npm install
-CMD ["node", "app.js"]
+CMD ["bash", "script.sh"]
