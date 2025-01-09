@@ -1,4 +1,12 @@
 ## Run this following command.
-- docker build -t 1.hello-world .
-- docker images | grep 1.hello-world
-- docker run 1.hello-world 
+### Lab 1
+- cd lab_1
+- docker build -t hello-world .
+- docker images | grep hello-world
+- docker run --name hello-container hello-world 
+- docker ps --a | grep hello-container
+### Lab 2
+- cd lab_2 
+- docker compose up --build
+- docker compose ps
+- docker compose down
